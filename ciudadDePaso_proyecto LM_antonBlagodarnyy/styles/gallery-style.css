@@ -1,0 +1,41 @@
+*{
+    font-family: Helvetica;
+  }
+  body{
+    margin:0;
+  }
+  h2{
+  text-align: center;
+  }
+  p::before{
+    content: "\2022  ";
+  }
+
+ /**Cuerpo**/
+ .contenedorGaleria{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y:auto;
+    background-color: rgb(200, 250, 250);
+   border-radius: 5px;
+ }
+ 
+ .bloqueImagen{
+   width:600px; 
+   margin-right: 20px;
+   text-align: center;
+
+  #imagenAjusteTamaño{
+    height:400px;
+  } 
+ } 
+ .contenedorGaleria img{
+   float:right;
+   margin-left: 15px;
+   width:300px;
+   border-radius: 10px;
+ }
+

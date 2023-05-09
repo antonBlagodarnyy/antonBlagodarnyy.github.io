@@ -1,0 +1,89 @@
+*{
+  font-family: Helvetica;
+}
+body{
+  margin:0;
+}
+h2{
+text-align: center;
+}
+p::before{
+  content: "\2022  ";
+}
+
+/**Cuerpo**/
+  /*textos*/
+  .contenedorTexto{
+    position: relative;
+    width:80%;
+    left:50%;
+    transform: translateX(-50%);
+  }
+
+  /*galeria de imagenes*/
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 250, 250);
+  }
+  .gallery img {
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  figcaption{
+    width:500px;
+    font-size: medium;
+    font-weight: 400;
+    text-align: center;
+  }
+  figcaption::after{
+    content: " \2713"
+  }
+
+
+  /*iFrame*/
+  .contenedorIframe{
+    position: relative;
+    width:100%;
+    left:50%;
+    transform:translateX(-50%);
+    background-color: rgb(200, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*reseñas*/
+  .contenedorReseñas{
+    /*centra el div*/
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    /*direccion horizontal y alineado al centro*/
+    flex-direction: row;
+    align-items: center;
+    width: 90%; 
+  }
+  .columna{
+    /*2 columnas*/
+    width:50%;
+  }
+  .reseña:nth-child(even){
+    /*cambiar pares*/
+    background-color:rgb(200, 250, 250);
+  }
+  .reseña{
+    margin:10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .reseña:hover{
+    background-color: rgb(102, 248, 248);
+  }

@@ -35,12 +35,10 @@
     padding: 14px 16px;
     text-decoration: none;
   }
-  .contenedorFooter nav a:link {
+  .contenedorFooter nav a {
     color: white;
   }
-  .contenedorFooter nav a:visited {
-    color: rgb(78, 78, 78);
-  }
+
   
   /*Firma*/
   .contenedorFooter #firma {

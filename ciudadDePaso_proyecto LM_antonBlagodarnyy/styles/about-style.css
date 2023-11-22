@@ -50,7 +50,7 @@ p::before{
   /*iFrame*/
   .contenedorIframe{
     position: relative;
-    width:100%;
+    width:70%;
     left:50%;
     transform:translateX(-50%);
     background-color: rgb(200, 255, 255);

@@ -35,7 +35,7 @@ p::before{
     }
     [required]{
       border-width:2px;
-      border-color:red;
+      border-color:rgb(110, 232, 203);
     }
     .name, .email, .genero, .seleccionMultiple, .fecha, .file, .edad{
     display:flex;

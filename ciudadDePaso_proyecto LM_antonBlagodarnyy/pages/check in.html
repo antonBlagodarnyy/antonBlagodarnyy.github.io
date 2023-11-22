@@ -8,7 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/check in-style.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/header.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/footer.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../styles/cookies.css'>
+
 </head>
 <body>
     <!--Cabezera-->
@@ -37,17 +37,14 @@
     <div class="calendario">
         
         <table id="calendarioTablaMarzo-Abril">
-            <colgroup>
-                <col span="1" style="background-color: lightgreen; border: none;">
-            </colgroup>
+            
             <thead>
                 <tr>
-                    <td colspan="9" style="border: none">Abril 2023</td>
+                    <td colspan="9" style="border: none ;background-color: lightgreen;">Abril 2023</td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td rowspan="4" class="sideBar"></td>
                     <td>30</td>
                     <td>31</td>
                     <td style="background-color:grey">1</td>
@@ -90,15 +87,11 @@
         </table>
 
         <table id="calendarioTablaMayo-Junio">
-            <colgroup>
-                <col span="1" style="background-color: lightgreen; border: none;">
-              </colgroup>
             <thead>
-                <td colspan="9" style="border: none">Mayo 2023</td>
+                <td colspan="9" style="border: none; background-color: lightgreen">Mayo 2023</td>
             </thead>
             <tbody>
-                <tr>
-                    <td rowspan="4" class="sideBar"></td>
+                <tr>    
                     <td>1</td>
                     <td>2</td>
                     <td>3</td>
@@ -208,20 +201,6 @@
     </fieldset>
 
     </form>
-
-       <!--aviso de cookies-->
-       <div class="cookie-notice">
-        <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestro uso de cookies.</p>
-        <button onclick="ocultarDiv()">Aceptar</button>
-        </div> 
-            <!--para ocultar el aviso-->
-            <script>
-                function ocultarDiv() {
-                  var div = document.getElementsByClassName("cookie-notice")[0];
-                  div.style.display = "none";
-                }
-              </script>    
-
     <footer>
         <!--navbar inferior-->
         <div class="contenedorFooter">

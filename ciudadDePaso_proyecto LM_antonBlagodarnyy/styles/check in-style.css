@@ -74,6 +74,7 @@ p::before{
     }
     tbody td{
       width:50px;
+      transition:1s;
     }
     tbody td:hover{
     background-color: rgb(119, 223, 119);

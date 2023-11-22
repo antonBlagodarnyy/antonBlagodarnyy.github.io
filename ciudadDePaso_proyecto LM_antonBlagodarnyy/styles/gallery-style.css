@@ -26,16 +26,20 @@
  .bloqueImagen{
    width:600px; 
    margin-right: 20px;
+   margin-bottom: 20px;
    text-align: center;
 
-  #imagenAjusteTamaño{
-    height:400px;
-  } 
+ 
  } 
  .contenedorGaleria img{
    float:right;
    margin-left: 15px;
    width:300px;
    border-radius: 10px;
+   transition: 1s;
  }
+ .contenedorGaleria img:hover{
+ width:400px;
+
+}
 

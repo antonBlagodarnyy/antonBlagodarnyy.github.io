@@ -1,3 +1,7 @@
+*{
+  background-color: aliceblue;
+}
+
 header {
     position: relative;
   }

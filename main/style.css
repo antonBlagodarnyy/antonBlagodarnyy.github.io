@@ -55,15 +55,20 @@ nav {
   }
   #projects{
     position:absolute;
-    width:80%;
-    height:20em;
     margin-top: 1em;
     margin-left:50%;
     margin-right:50%;
     transform: translateX(-50%);
-    background-color: rgb(204, 124, 19);
+
+    width:80%;
+    height:20em;
+    
+   /* background-color: rgb(204, 124, 19);*/
+
     display:flex;
     justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
   }
   #projects .projectImage{/*add hover effect*/
 

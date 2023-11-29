@@ -4,18 +4,20 @@ body{
   font-family: Roboto,sans-serif;
   
 }
-/*navbar*/
+
 header {
   position: relative;
   width:100%;
-  height:150px;
+  height:25em;
   background-color: lightseagreen;
 
   }
   
   #logo-container {
     position: absolute;
-    height:70%;
+    left:1em;
+    top:1em;
+    height:15%;
 
   }
   #logo-container img{
@@ -23,15 +25,19 @@ header {
     height:100%;
   }
 
-  #name{
+  #presentation {
     position:absolute;  
-    font-weight:lighter;
-    right:1%;
-  }
+    top:25%;
+    bottom:50%;
 
+    right:5%;
+
+    font-weight: lighter;
+  }
+/*navbar*/
 nav {
   position:absolute;
-  height:30%;
+  height:15%;
     bottom:0;
     background-color: #333;
     width:100%;
@@ -83,6 +89,10 @@ nav {
 
 /*@media queries*/
 @media (max-width: 720px){
+  #logo-container {
+  width: 50%;
+  }
+
   #projects{
   flex-direction: column;
   }

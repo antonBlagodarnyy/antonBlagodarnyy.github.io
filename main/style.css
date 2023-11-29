@@ -71,11 +71,15 @@ nav {
     align-items: center;
   }
   #projects .projectImage{/*add hover effect*/
-
     width:15em;
+
   }
+  
   #projects .projectImage img{
-
     width:15em;
+    transition: 1s;
+  }
+  #projects .projectImage img:hover{/*add hover effect*/
+    width:20em;
   }
 

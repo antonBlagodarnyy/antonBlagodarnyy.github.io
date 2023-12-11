@@ -1,5 +1,5 @@
 *{
-    font-family: Helvetica;
+  font-family: 'Montserrat', sans-serif;
   }
   body{
     margin:0;
@@ -24,7 +24,7 @@
  }
  
  .bloqueImagen{
-   width:600px; 
+   width:40em; 
    margin-right: 20px;
    margin-bottom: 20px;
    text-align: center;
@@ -34,12 +34,31 @@
  .contenedorGaleria img{
    float:right;
    margin-left: 15px;
-   width:300px;
+   width:25em;
    border-radius: 10px;
-   transition: 1s;
+
  }
- .contenedorGaleria img:hover{
- width:400px;
+
+
+/*@media queries*/
+@media (max-width: 680px){
+  .bloqueImagen{
+width:35em;
+font-size: 1em;
+  }
+  .contenedorGaleria img{
+width:20em;
+  }
 
 }
 
+@media (max-width: 480px){
+  .bloqueImagen{
+width:25em;
+font-size: 0.7em;
+  }
+  .contenedorGaleria img{
+width:15em;
+  }
+
+}

@@ -1,5 +1,5 @@
 *{
-  font-family: Helvetica;
+  font-family: 'Montserrat', sans-serif;
 }
 body{
   margin:0;
@@ -29,8 +29,8 @@ p::before{
     background-color: rgb(200, 250, 250);
   }
   .gallery img {
-    width: 500px;
-    height: 400px;
+    width: 20em;
+    height: auto;
     transition:1s;
     margin: 10px;
     border: none;
@@ -39,12 +39,12 @@ p::before{
   }
 
   .gallery  img:hover{
-    width: 600px;
-    height: 450px;
+    width: 25em;
+    height: auto;
   }
 
   figcaption{
-    width:500px;
+    width:20em;
     font-size: medium;
     font-weight: 400;
     text-align: center;
@@ -54,13 +54,14 @@ p::before{
     content: " \2713"
   }
   .gallery figure:hover figcaption {
-    width: 600px; 
+    width: 25em; 
   }
 
   /*iFrame*/
   .contenedorIframe{
     position: relative;
-    width:70%;
+    width:98%;
+    height: 40em;
     left:50%;
     transform:translateX(-50%);
     background-color: rgb(200, 255, 255);
@@ -94,6 +95,24 @@ p::before{
     padding: 10px;
     border-radius: 10px;
   }
-  .reseña:hover{
-    background-color: rgb(102, 248, 248);
+
+
+  /*@media queries*/
+@media (max-width: 619px){
+  .gallery  img:hover{/*anula hover de las imagenes*/
+    width: 20em;
+    height: auto;
   }
+  .gallery figure:hover figcaption {
+    width: 20em; 
+  }
+}
+
+@media (max-width: 420px){
+  .contenedorIframe{
+    height: 25em;
+  } 
+  .contenedorReseñas{
+font-size: 0.6em;
+  }
+}

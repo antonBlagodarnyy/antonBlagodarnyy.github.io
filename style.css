@@ -1,0 +1,34 @@
+* {
+    font-family:Helvetica;
+    margin:0;
+    padding:0;
+}
+li{
+  list-style:none;
+  margin:2vh;
+}
+a{
+  text-decoration:none;
+}
+.container{
+    width:100%;
+}
+.container-header {
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+
+}
+.container-links {
+  margin:5vh;
+text-align:center;
+
+}
+.profile-pic {
+  margin:5vh;
+  width: 20vh;
+  border-radius: 10%;
+}
+.signature-pic{
+  width:10vh;
+}

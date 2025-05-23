@@ -1,34 +1,35 @@
 * {
-    font-family:Helvetica;
-    margin:0;
-    padding:0;
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
 }
-li{
-  list-style:none;
-  margin:2vh;
+li {
+  list-style: none;
+  margin: 5vh;
 }
-a{
-  text-decoration:none;
+a {
+  font-size: 5vh;
+  text-decoration: none;
 }
-.container{
-    width:100%;
+.container {
+  
+  width: 100%;
 }
 .container-header {
+  background-color: whitesmoke;
   display: flex;
-  flex-direction:column;
-  align-items:center;
-
+  flex-direction: column;
+  align-items: center;
 }
 .container-links {
-  margin:5vh;
-text-align:center;
-
+  width: 60vh;
+  margin: auto;
 }
 .profile-pic {
-  margin:5vh;
+  margin: 5vh;
   width: 20vh;
   border-radius: 10%;
 }
-.signature-pic{
-  width:10vh;
+.signature-pic {
+  width: 10vh;
 }

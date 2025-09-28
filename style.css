@@ -19,6 +19,13 @@ a {
 a:visited {
   color: #35819b;
 }
+
+h1{
+  width:100%;
+
+  text-align:center;
+  padding:2vh;
+}
 .container {
   width: 100%;
 }

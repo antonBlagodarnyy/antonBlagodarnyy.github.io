@@ -5,70 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js"></script>
   </head>
 
   <body>
-    <div class="container">
-      <div class="container-header">
+    <div class="container-hero">
+      <div class="container-hero-content">
         <img
-          class="profile-pic"
+          class="pic-profile"
           src="assets/profile-pic.jpg"
           alt="profile-pic"
         />
-        <h2>Anton Blagodarnyy</h2>
-        <h3>Software developer</h3>
-        <img class="signature-pic" src="assets/firma.png" />
+        <div class="container-hero-content-info">
+          <h1>Anton Blagodarnyy</h1>
+          <h2>Software developer</h2>
+          <img class="pic-signature" src="assets/firma.png" />
+        </div>
       </div>
     </div>
-    <div class="container">
-      <div class="container-links">
-        <ul>
-          <li>
+    <div class="container-wrapper">
+      <h1>Projects</h1>
+      <nav class="tabs-nav">
+        <button>Rick and Morty</button>
+        <button>Auto</button>
+        <button>Chat Room</button>
+      </nav>
+      <div id="tab" class="tabs inliner">
+        <div class="container-slide">
+          <div class="container-slide-content">
+            <img class="pic-logo" src="assets/angular.png" />
             <a href="https://rick-and-morty-gray-five.vercel.app/"
               >Rick and Morty data</a
             >
-            <h3>Angular</h3>
-            <h4>Deployed in Vercel</h4>
-            <p>
-              Data search system with pagination that consumes the public data
-              API for the Rick and Morty series.
-            </p>
-          </li>
-          <hr />
-          <li>
+            <div class="description">
+              <p>
+                Data search system that consumes the public data API for the
+                Rick and Morty series.
+              </p>
+              <a href="https://github.com/antonBlagodarnyy/RickAndMorty"
+                ><img src="assets/github.png" class="pic-logo"></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="container-slide">
+          <div class="container-slide-content">
+            <div class="pics">
+              <img class="pic-logo" src="assets/angular.png" />
+              <img class="pic-logo" src="assets/nodejs.png" />
+              <img class="pic-logo" src="assets/mysql.png" />
+            </div>
+
             <a href="https://auto-sepia.vercel.app/">Auto</a>
-            <h3>Angular Node.js Express.js Mysql</h3>
-            <h4>Deployed in Vercel and Render</h4>
-            <p>(If the server is down it takes a while to initialize)</p>
-            <br />
-            <p>Management system for freelancers that includes:</p>
-            <ol>
-              <li>Login system</li>
-              <li>Calendar</li>
-              <li>Product inventory</li>
-              <li>Customer portfolio</li>
-            </ol>
-          </li>
-           <hr />
-          <li>
-            <a href="https://chat-room-ten-lovat.vercel.app/">ChatRoom</a>
-            <h3>Angular Springboot Mysql</h3>
-            <h4>Deployed in Vercel and Render</h4>
-            <p>(If the server is down it takes a while to initialize)</p>
-            <br />
-            <p>Simple chat application with two functionalities</p>
-            <ol>
-              <li>
-                Connects all active users via a websocket. When each user
-                receives a message, they can view it in the client.
-              </li>
-              <li>
-                When the chat is initialized via a REST API, all previously sent
-                messages are retrieved.
-              </li>
-            </ol>
-          </li>
-        </ul>
+            <div class="description">
+              <p>Management system for freelancers that includes:</p>
+              <ol>
+                <li>Login system</li>
+                <li>Calendar</li>
+                <li>Product inventory</li>
+                <li>Customer portfolio</li>
+              </ol>
+               <a href="https://github.com/antonBlagodarnyy/Auto"
+                ><img src="assets/github.png" class="pic-logo"></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="container-slide">
+          <div class="container-slide-content">
+            <div class="pics">
+              <img class="pic-logo" src="assets/angular.png" />
+              <img class="pic-logo" src="assets/springboot.png" />
+              <img class="pic-logo" src="assets/mysql.png" />
+            </div>
+            <a href="https://publicchatroom.duckdns.org/">ChatRoom</a>
+            <div class="description">
+              <p>Public chat room with few restrictions.</p>
+               <a href="https://github.com/antonBlagodarnyy/ChatRoom"
+                ><img src="assets/github.png" class="pic-logo"></a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

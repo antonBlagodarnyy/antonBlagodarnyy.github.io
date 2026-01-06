@@ -5,88 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-
-    <script src="script.js"></script>
   </head>
 
   <body>
     <div class="container-hero">
       <div class="container-hero-content">
-       <!--  <img
-          class="pic-profile"
-          src="assets/profile-pic.jpg"
-          alt="profile-pic"
-        /> -->
-        <div class="container-hero-content-info">
-          <h1>Anton Blagodarnyy</h1>
-          <h2>Software developer</h2>
-          <img class="pic-signature" src="assets/firma.png" />
+        <h1>Anton Blagodarnyy</h1>
+        <h2>Software developer</h2>
+
+        <img class="pic-signature" src="assets/firma.png" />
+        <div class="pics">
+          <a href="https://www.linkedin.com/in/anton-blagodarnyy/"
+            ><img class="pic pic-link" src="assets/linkedin.png"
+          /></a>
+          <a href="https://www.instagram.com/antonblagodarnyy/"
+            ><img class="pic pic-link" src="assets/instagram.png"
+          /></a>
         </div>
       </div>
     </div>
-    <div class="container-wrapper">
-      <h1>Projects</h1>
-      <nav class="tabs-nav">
-        <button>Rick and Morty</button>
-        <button>Auto</button>
-        <button>Chat Room</button>
-      </nav>
-      <div id="tab" class="tabs inliner">
-        <div class="container-slide">
-          <div class="container-slide-content">
-            <img class="pic-logo" src="assets/angular.png" />
-            <a href="https://rick-and-morty-gray-five.vercel.app/"
-              >Rick and Morty data</a
-            >
-            <div class="description">
-              <p>
-                Data search system that consumes the public data API for the
-                Rick and Morty series.
-              </p>
-              <a href="https://github.com/antonBlagodarnyy/RickAndMorty"
-                ><img src="assets/github.png" class="pic-logo"></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="container-slide">
-          <div class="container-slide-content">
-            <div class="pics">
-              <img class="pic-logo" src="assets/angular.png" />
-              <img class="pic-logo" src="assets/nodejs.png" />
-              <img class="pic-logo" src="assets/mysql.png" />
-            </div>
 
-            <a href="https://auto-sepia.vercel.app/">Auto</a>
-            <div class="description">
-              <p>Management system for freelancers that includes:</p>
-              <ol>
-                <li>Login system</li>
-                <li>Calendar</li>
-                <li>Product inventory</li>
-                <li>Customer portfolio</li>
-              </ol>
-               <a href="https://github.com/antonBlagodarnyy/Auto"
-                ><img src="assets/github.png" class="pic-logo"></a
-              >
-            </div>
+    <hr />
+    <h1 class="section-title">Projects</h1>
+
+    <div class="container-projects">
+      <div class="card">
+        <div class="card-content">
+          <div class="pics">
+            <img class="pic pic-logo" src="assets/angular.png" />
+          </div>
+          <h2>Rick and Morty data</h2>
+          <div class="description">
+            <p>
+              Data search system that consumes the public data API for the Rick
+              and Morty series.
+            </p>
           </div>
         </div>
-        <div class="container-slide">
-          <div class="container-slide-content">
-            <div class="pics">
-              <img class="pic-logo" src="assets/angular.png" />
-              <img class="pic-logo" src="assets/springboot.png" />
-              <img class="pic-logo" src="assets/mysql.png" />
-            </div>
-            <a href="https://publicchatroom.duckdns.org/">ChatRoom</a>
-            <div class="description">
-              <p>Public chat room with few restrictions.</p>
-               <a href="https://github.com/antonBlagodarnyy/ChatRoom"
-                ><img src="assets/github.png" class="pic-logo"></a
-              >
-            </div>
+        <div class="card-footer">
+          <a href="https://github.com/antonBlagodarnyy/RickAndMorty"
+            ><img src="assets/github.png" class="pic pic-logo"
+          /></a>
+          <a href="https://rick-and-morty-gray-five.vercel.app/"
+            ><img src="assets/link.png" class="pic pic-link"
+          /></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <div class="pics">
+            <img class="pic pic-logo" src="assets/angular.png" />
+            <img class="pic pic-logo" src="assets/nodejs.png" />
+            <img class="pic pic-logo" src="assets/mysql.png" />
           </div>
+
+          <h2>Auto</h2>
+          <div class="description">
+            <p>Management system for freelancers that includes:</p>
+            <ol>
+              <li>Login system</li>
+              <li>Calendar</li>
+              <li>Product inventory</li>
+              <li>Customer portfolio</li>
+            </ol>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/antonBlagodarnyy/Auto"
+            ><img src="assets/github.png" class="pic pic-logo"
+          /></a>
+          <a href="https://auto-sepia.vercel.app/"
+            ><img src="assets/link.png" class="pic pic-link"
+          /></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <div class="pics">
+            <img class="pic pic-logo" src="assets/angular.png" />
+            <img class="pic pic-logo" src="assets/springboot.png" />
+            <img class="pic pic-logo" src="assets/mysql.png" />
+          </div>
+          <h2>ChatRoom</h2>
+          <div class="description">
+            <p>Public chat room with few restrictions.</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/antonBlagodarnyy/ChatRoom"
+            ><img src="assets/github.png" class="pic pic-logo"
+          /></a>
+          <a href="https://publicchatroom.duckdns.org/"
+            ><img src="assets/link.png" class="pic pic-link"
+          /></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <div class="pics">
+            <img class="pic pic-logo" src="assets/angular.png" />
+            <img class="pic pic-logo" src="assets/nodejs.png" />
+            <img class="pic pic-logo" src="assets/springboot.png" />
+            <img class="pic pic-logo" src="assets/mysql.png" />
+          </div>
+          <h2>ChatMap</h2>
+          <div class="description">
+            <p>
+              Simple chat app that let's you find partners based on their
+              location.
+            </p>
+            <ol>
+              <li>Client signups and is asked for his location.</li>
+              <li>
+                Map is centered on users location and displays other users
+                locations.
+              </li>
+              <li>
+                On selecting a marker, it's possible to open a chat with that
+                user.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/antonBlagodarnyy/ChatMap"
+            ><img src="assets/github.png" class="pic pic-logo"
+          /></a>
+          <a href="https://chatmap.duckdns.org/"
+            ><img src="assets/link.png" class="pic pic-link"
+          /></a>
         </div>
       </div>
     </div>
